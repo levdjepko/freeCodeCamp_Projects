@@ -105,7 +105,7 @@ function buyWeapon() {
   }
 }
 function sellWeapon() {
-
+ // sell the weapon
 }
 function fightSlime() {
 
