@@ -104,9 +104,15 @@ function buyWeapon() {
     button2.onclick = sellWeapon;
   }
 }
+
 function sellWeapon() {
- // sell the weapon
+  if (inventory.length > 1) {
+    gold += 15;
+    goldText.innerText = gold;
+
+  }
 }
+
 function fightSlime() {
 
 }
