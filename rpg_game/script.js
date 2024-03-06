@@ -1,3 +1,4 @@
+// This is a part of the Javascript RPG game
 let xp = 0;
 let health = 100;
 let gold = 50;
