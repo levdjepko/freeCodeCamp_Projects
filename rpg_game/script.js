@@ -1,7 +1,6 @@
-// This is a part of the Javascript RPG game
 let xp = 0;
 let health = 100;
-let gold = 55;
+let gold = 50;
 let currentWeapon = 0;
 let fighting;
 let monsterHealth;
@@ -23,7 +22,6 @@ const weapons = [
   { name: 'claw hammer', power: 50 },
   { name: 'sword', power: 100 }
 ];
-
 const monsters = [
   {
     name: "slime",
@@ -59,6 +57,12 @@ const locations = [
     "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
     "button functions": [fightSlime, fightBeast, goTown],
     text: "You enter the cave. You see some monsters."
+  },
+  {
+    name: "fight",
+    "button text": ["Attack", "Dodge", "Run"],
+    "button functions": [attack, dodge, goTown],
+    text: "You are fighting a monster."
   }
 ];
 
@@ -148,6 +152,8 @@ function fightDragon() {
 }
 
 function goFight() {
+  update(locations[3]);
+  monsterHealth = monsters[fighting].health;
 
 }
 
