@@ -9,6 +9,7 @@ const darkColorsArr = [
   "#36454F",
   "#2C3E50",
   "#800020",
+  "#FFFFFF"
 ];
 
 function getRandomIndex() {
